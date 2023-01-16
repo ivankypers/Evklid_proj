@@ -7,11 +7,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="/images/favicon.png">
     <title>Евклид</title>
 </head>
 <body>
     <header class="header">
         <div class="container header__container">
+            <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </button>
             <img src="images/logo.svg" alt="Logo" class="header__logo">
             <nav class="nav header__nav">
                 <ul class="nav__list">
@@ -31,8 +38,8 @@
                         <a href="" class="nav__link">Контакты</a>
                     </li>
                 </ul>
-                <a href="#" class="nav__search"><img src="images/search.svg" alt="Search"></a>
             </nav>
+            <a href="#" class="nav__search"><img src="images/search.svg" alt="Search"></a>
         </div>
     </header>
     <section class="hero">
@@ -59,7 +66,7 @@
                 <div class="card about__card">
                     <div class="card__content">
                         <div class="card__dsc">
-                            Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов
+                            Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов
                         </div>
                         <div class="wrapper">
                             <button class="btn about__btn">
@@ -72,7 +79,7 @@
                     <li class="about__item  about__item--bg1">
                         <div class="item__content">
                             <h3 class="item__title">Консультация с широким активом</h3>
-                            <p class="item__dsc">А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений</p>
+                            <p class="item__dsc">А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений</p>
                         </div>
                     </li>
                     <li class="about__item about__item--bg2">
@@ -87,36 +94,44 @@
 
     </section>
     <section class="how">
-        <div class="container how__container">
-            <div class="how__left"> <!--mb delete-->
+        <div class="container">
+            <div class="how__top">
                 <h2 class="how__title">Как мы работаем</h2>
                 <ul class="how__list">
-                    <li class="list__step">
-                        <a href="" class="list__step">1 Шаг</a>
+                    <li class="list__item">
+                        <a href="#" class="list__step">1 Шаг</a>
                     </li>
-                    <li class="list__step">
-                        <a href="" class="list__step">2 Шаг</a>
+                    <li class="list__item">
+                        <a href="#" class="list__step">2 Шаг</a>
                     </li>
-                    <li class="list__step">
-                        <a href="" class="list__step">3 Шаг</a>
+                    <li class="list__item">
+                        <a href="#" class="list__step">3 Шаг</a>
                     </li>
-                    <li class="list__step">
-                        <a href="" class="list__step">4 Шаг</a>
+                    <li class="list__item">
+                        <a href="#" class="list__step">4 Шаг</a>
                     </li>
                 </ul>
-                <h3 class="how__subtitle">Проводим консультацию</h3>
-                <div class="how__text">
-                    <p class="how__dsc">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.</p>
-                    <p class="how__dsc">А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
-                </div>
-                <div class="wrapper">
-                    <button class="btn how__btn-about">Подробнее</button>
-                    <button class="btn how__btn-deal">Договор</button>
-                </div>
             </div>
-            <div class="how__right">
-                <img src="/images/how__img.jpg" alt="Как мы работаем">
+            <div class="how__container">
+                <div class="how__left">
+
+
+                    <h3 class="how__subtitle">Проводим консультацию</h3>
+                    <div class="how__text">
+                        <p class="how__dsc">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.</p>
+                        <p class="how__dsc">А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+                    </div>
+                    <div class="wrapper">
+                        <button class="btn how__btn-about">Подробнее</button>
+                        <button class="btn how__btn-deal">Договор</button>
+                    </div>
+                </div>
+                <div class="how__right">
+                    <img src="/images/how__img.jpg" alt="Как мы работаем" class="how__image">
+                </div>
+
             </div>
+
         </div>
     </section>
     <section class="faq">

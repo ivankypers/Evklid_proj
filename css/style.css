@@ -55,6 +55,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0;
   font-weight: normal;
   font-family: Montserrat, sans-serif;
+
 }
 
 ol, ul {
@@ -72,6 +73,14 @@ a {
 
 button {
   border: none;
+}
+
+body {
+  min-width: 320px;
+}
+
+.btn {
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
 }
 
 
@@ -120,13 +129,6 @@ nav {
   margin-right: 85px;
 }
 
-.nav__link {
-  color: black;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-
 /* Hero  */
 .hero {
   margin-bottom: 50px;
@@ -171,6 +173,18 @@ nav {
   font-weight: 700;
   font-size: 23px;
   line-height: 28px;
+}
+
+.hero__btn:focus {
+  background-color: #FFB84D;
+}
+
+.hero__btn:hover {
+  background-color: #FFB84D;
+}
+
+.hero__btn:active {
+  background-color: #E1670E;
 }
 
 /*    About    */
@@ -247,6 +261,18 @@ nav {
   border-radius: 16px;
 }
 
+.about__btn:focus {
+  background-color: #FF9900;
+}
+
+.about__btn:hover{
+  background-color: #FF9900;
+}
+
+.about__btn:active{
+  background-color: #E1670E;
+}
+
 .about__list {
   display: flex;
   flex-direction: column;
@@ -258,7 +284,7 @@ nav {
   border: 1px solid #CACACA;
   border-radius: 32px;
   padding: 65px 100px;
-  min-height: 295px;
+  height: 295px;
 }
 
 .about__item:not(:last-child) {
@@ -318,13 +344,42 @@ nav {
 }
 
 .list__step {
+  position: relative;
   color: var(--color-black);
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  outline: none;
+  transition: color .2s ease-in-out;
 }
 
-.list__step:not(:last-child) {
+.list__step::after {
+  position: absolute;
+  content: "";
+  outline: 2px solid #FF9900;
+  left: -3px;
+  right: -3px;
+  top: -3px;
+  bottom: -3px;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.list__step:focus::after {
+  opacity: 1;
+  color: #FFB84D;
+}
+
+.list__step:hover {
+  color: #FFB84D;
+}
+
+.list__step:active {
+  outline: none;
+  color: #E1670E;
+}
+
+.list__item:not(:last-child) {
   margin-right: 83px;
 }
 
@@ -350,16 +405,44 @@ nav {
 .how__btn-about {
   color: var(--color-white);
   background-color: #FF9900;
+  margin-right: 32px;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
 
-.how__btn-about {
-  margin-right: 32px;
+.how__btn-about:focus {
+  background-color: #FFB84D;
+}
+
+.how__btn-about:hover{
+  background-color: #FFB84D;
+}
+
+.how__btn-about:active{
+  background-color: #E1670E;
 }
 
 .how__btn-deal {
+
   border: 1px solid #000000;
   background-color: var(--color-white);
+  transition: color .2s ease-in-out, background-color .2s ease-in-out;
 }
+
+.how__btn-deal:focus {
+  color: white;
+  background-color: #666666;
+}
+
+.how__btn-deal:hover {
+  color: white;
+  background-color: #666666;
+}
+
+.how__btn-deal:active {
+  color: white;
+  background-color: black;
+}
+
 
 .how__right {
   display: flex;
@@ -390,7 +473,10 @@ nav {
   align-items: center;
   padding: 39px 0;
   border-top: 1px solid #CACACA;
+  transition: border-top-color .2s ease-in-out;
+
 }
+
 
 .points__wrapper:last-child {
   border-bottom: 1px solid #CACACA;
@@ -402,6 +488,16 @@ nav {
   font-size: 24px;
   line-height: 32px;
   margin-right: auto;
+  transition: color .2s ease-in-out;
+}
+
+.faq__point:focus {
+  color: #FF9900;
+
+}
+
+.faq__point:hover {
+  color: #FF9900;
 }
 
 .point__dropdown {
@@ -443,11 +539,52 @@ nav {
 }
 
 .nav__link {
+  position: relative;
   color: inherit;
   font-weight: 600;
   font-size: 18px;
   line-height: 36px;
 }
+
+.nav__link::after {
+  position: absolute;
+  content: "";
+  outline: 2px solid #FF9900;
+  left: -3px;
+  right: -3px;
+  top: -3px;
+  bottom: -3px;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  outline: 1px solid #FF9900;
+  bottom: -2px;
+  right: 0;
+  left: 0;
+  scale: 0;
+  transition: scale .3s ease-in-out;
+}
+
+.nav__link:focus::after {
+  opacity: 1;
+}
+
+.nav__link:hover::before {
+  scale: 1;
+}
+
+.nav__link:active {
+  opacity: 1;
+  color: #E1670E;
+}
+
+
+
+
 
 .social {
   display: flex;
@@ -520,12 +657,25 @@ nav {
 }
 
 .form__btn {
+  background-color: #FF9900;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   padding: 19px 52px;
+  transition: background-color .2s ease-in-out;
 }
 
+.form__btn:focus {
+  background-color: #FFB84D;
+}
+
+.form__btn:hover {
+  background-color: #FFB84D;
+}
+
+.form__btn:active {
+  background-color: #E1670E;
+}
 
 
 
