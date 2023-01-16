@@ -137,7 +137,7 @@ nav {
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  background-image: url("/images/hero__gb.jpg");
+  background-image: url("../images/hero__gb.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 80px;
@@ -226,7 +226,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  background-image: url("/images/about__card.jpg");
+  background-image: url("../images/about__card.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 32px;
@@ -292,13 +292,13 @@ nav {
 }
 
 .about__item--bg1 {
-  background-image: url("/images/item1.svg");
+  background-image: url("../images/item1.svg");
   background-position: 9% 50%;
   background-repeat: no-repeat;
 }
 
 .about__item--bg2 {
-  background-image: url("/images/item2.svg");
+  background-image: url("../images/item2.svg");
   background-position: 9% 50%;
   background-repeat: no-repeat;
 }
@@ -594,7 +594,7 @@ nav {
   display: block;
   width: 60px;
   height: 60px;
-  background-image: url("/images/ok.svg");
+  background-image: url("../images/ok.svg");
   background-repeat: no-repeat;
   margin-right: 25px;
 }
@@ -603,7 +603,7 @@ nav {
   display: block;
   width: 60px;
   height: 60px;
-  background-image: url("/images/vk.svg");
+  background-image: url("../images/vk.svg");
   background-repeat: no-repeat;
 }
 
