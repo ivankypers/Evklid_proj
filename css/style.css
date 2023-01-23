@@ -105,7 +105,7 @@ body {
 .header__container {
   display: flex;
   align-items: center;
-  padding: 19px 3px;
+  padding: 19px 10px;
 }
 
 .header__logo {
@@ -141,7 +141,9 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 80px;
-
+  border-radius: 32px;
+  width: auto;
+  height: auto;
 }
 
 .hero__text {
@@ -284,7 +286,7 @@ nav {
   border: 1px solid #CACACA;
   border-radius: 32px;
   padding: 65px 100px;
-  height: 295px;
+  height: 100%;
 }
 
 .about__item:not(:last-child) {
@@ -518,7 +520,7 @@ nav {
   padding: 50px 0;
 }
 
-.footer_left {
+.footer__left {
   display: flex;
   flex-direction: column;
 }
