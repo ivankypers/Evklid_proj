@@ -513,7 +513,7 @@ a {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-image: url("/img/aboutcardleftbg.jpg");
+  background-image: url("../img/aboutcardleftbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 32px;
@@ -769,19 +769,19 @@ a {
 }
 
 .tabs-bg--one {
-  background-image: url("/img/workslide1.jpg");
+  background-image: url("../img/workslide1.jpg");
 }
 
 .tabs-bg--two {
-  background-image: url("/img/workslide2.png");
+  background-image: url("../img/workslide2.png");
 }
 
 .tabs-bg--three {
-  background-image: url("/img/workslide3.png");
+  background-image: url("../img/workslide3.png");
 }
 
 .tabs-bg--four {
-  background-image: url("/img/workslide4.png");
+  background-image: url("../img/workslide4.png");
 }
 
 /*     QUE      */
